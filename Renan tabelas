@@ -1,0 +1,49 @@
+CREATE DATABASE dblojarenan;
+USE dblojarenan;
+
+CREATE TABLE tb_produtos(
+   id bigint auto_increment,
+     codigo varchar (50),
+     nomeproduto varchar (50),
+     categoria varchar (50),
+     preço varchar (50),
+     primary key (id)
+     );
+     
+     INSERT INTO tb_produtos (codigo, nomeproduto, categoria, preço) VALUES ("P1", "feijao","leguminosas", "9,0");
+	 INSERT INTO tb_produtos (codigo, nomeproduto, categoria, preço) VALUES ("P2", "farinha","industrial", "7,90");
+	 INSERT INTO tb_produtos (codigo, nomeproduto, categoria, preço) VALUES ("P3", "danone","laterius", "10,00");
+	 INSERT INTO tb_produtos (codigo, nomeproduto, categoria, preço) VALUES ("P4", "macarrao","massas", "12,40");
+     
+     
+     CREATE TABLE tb_clientes(
+   id bigint auto_increment,
+     codigo varchar (50),
+     nome varchar (50),
+     endereco varchar (100),
+     telefone varchar (50),
+     statuscliente varchar (50),
+     pedido varchar (50),
+     primary key (id)
+     );
+     
+          INSERT INTO tb_clientes (codigo, nome, endereco, telefone, statuscliente, pedido) VALUES ("C1","Renan", "rua oscar freire", "965748329", "medio", "D1");
+          INSERT INTO tb_clientes (codigo, nome, endereco, telefone, statuscliente, pedido) VALUES ("C2","Renato", "rua galvão bueno", "965437283", "bom", "D2");
+          INSERT INTO tb_clientes (codigo, nome, endereco, telefone, statuscliente, pedido) VALUES ("C3","Julio", "beco do batman", "985321546", "ruim", "D3");
+          INSERT INTO tb_clientes (codigo, nome, endereco, telefone, statuscliente, pedido) VALUES ("C4","ana", "rua august", "987432542", "medio", "D3");
+
+CREATE TABLE tb_pedido1 (
+   id bigint auto_increment,
+     codigopedido varchar (100),
+     datapedido varchar (100),
+     categoria varchar (100),
+     nomecliente varchar (100),
+     endereco varchar (100),
+     telefone varchar (100),
+     primary key (id)
+     );
+     
+INSERT INTO tb_pedido1 (codigopedido, datapedido, categoria, nomecliente, endereco, telefone) VALUES ("D1","23/03/2023", "leguminosas", "renan", "rua oscar freire", "965748329");
+INSERT INTO tb_pedido1 (codigopedido, datapedido, categoria, nomecliente, endereco, telefone) VALUES ("D2","12/02/2023", "industrial", "renato", "rua galvao bueno", "965437283");
+INSERT INTO tb_pedido1 (codigopedido, datapedido, categoria, nomecliente, endereco, telefone) VALUES ("D3","22/04/2023", "laterius", "julio", "beco do batman", "985321546");
+INSERT INTO tb_pedido1 (codigopedido, datapedido, categoria, nomecliente, endereco, telefone) VALUES ("D4","01/01/2023", "massas", "ana", "rua august", "987432542");
