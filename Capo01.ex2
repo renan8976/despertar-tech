@@ -1,0 +1,8 @@
+</head>
+<body>
+    <script>
+        const nome = prompt("nome")
+        alert(`Ola" + ola meu nome e renan`)
+    </script>
+</body>
+</html>
