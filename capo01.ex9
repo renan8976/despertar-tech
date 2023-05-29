@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    const preco = Number(prompt("qual foi o preco"))
+    const quantParcelas = Number(prompt("quantas parcelas são?"))
+    const desconto = (preco*0.10)
+    const parcelado = (preco/quantParcelas)
+    const vista =(preco-desconto)
+    alert(`O preço é R$${preco.toFixed(2)}\n À Vista R$${vista.toFixed(2)}
+    O valor parcelado R$${parcelado.toFixed(2)}`)
+  </script>
+</body>
+</html>
