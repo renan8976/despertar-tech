@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const dia = prompt(("quantos dias foram a viagem"))
+        const horas = prompt(("quantos horas foram a viagem"))
+        const totaldehoras = dia * 24
+        const total = Number(totaldehoras) + Number (horas)
+        alert(`total de hora ${total}`)
+    </script>
+</body>
+</html>
